@@ -3,6 +3,9 @@ sudo: required
 services:
   - docker
 
+before_install:
+  - echo "IT IS COMMING"
+
 
 deploy:
   provider: elasticbeanstalk
