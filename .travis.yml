@@ -3,16 +3,18 @@ sudo: required
 services:
   - docker
 
+
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
   app: "ucd-capstone-frontend"
   env: "UcdCapstoneFrontend-env"
   bucket_name: "ucd-capstone-frontend"
-  bucket_path: "ucd-capstone-frontend"
   on:
     branch: master
-  access_key_id:
-    secure: "$AWS_ACCESS_KEY"
-  secret_access_key:
-    secure: "$AWS_SECRET_KEY"
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key: "$AWS_SECRET_KEY"
+
+
+after_deploy:
+  - echo "DONE :-)"
