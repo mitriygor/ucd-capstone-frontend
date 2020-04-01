@@ -11,7 +11,7 @@ deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
   app: "ucd-capstone-frontend"
-  env: "UcdCapstoneFrontend-env"
+  env: "ucd-capstone-frontend-env"
   bucket_name: "ucd-capstone-frontend"
   on:
     branch: master

@@ -1,8 +1,3 @@
-# Docker
-Dockerfile
-docker-compose.yml
-.dockerignore
-
 # compiled output
 /dist
 /tmp
@@ -84,3 +79,8 @@ yarn-debug.log*
 # production
 /build
 
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
